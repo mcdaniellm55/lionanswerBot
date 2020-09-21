@@ -11,7 +11,7 @@ import concurrent
 import random
 
 #BOT_OWNER_ROLE = 'fetch' # change to what you need
-#BOT_OWNER_ROLE_ID = "597332392637890571"
+#BOT_OWNER_ROLE_ID = "623029647692791818"
   
  
 
@@ -25,9 +25,12 @@ oot_channel_id_list = ["459842150323060736",#dimension hq
 	"693960182803333150",#world
 	"725596647115063356",#pride
 	"736540378001440819",#private
-	"728283181106593832",#unt     
+	"728283181106593832",#unt
+        "732405414901317752",#vedantu
+         "732405971611287552",#sb
+         "753061146931495093",#hq 
 "733409955411132487",#quipp log all answer
-"638294866719408128"
+"753050428693807126"
 
 ]
 
@@ -79,7 +82,7 @@ class SelfBot(discord.Client):
 
     async def on_ready(self):
         print("======================")
-        print("Trivia Savage Pro")
+        print("Lion Trivia")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -138,7 +141,7 @@ class Bot(discord.Client):
 
         # embed creation
 	
-        self.embed=discord.Embed(title= "**__TRIVIA SAVAGE| PRO__**",description = '***Connected with HQ Trivia....***', color=0x0099E1)
+        self.embed=discord.Embed(title= "**__Lion Trivia| __**",description = '***Connected with HQ Trivia....***', color=0x0099E1)
         self.embed.set_author(name ='',url=' ',icon_url='')
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/737039356249768006/737042737790189618/Screenshot_20200727-013331_Chrome.jpg")
         self.embed.add_field(name="**__ANSWER__** 1️⃣", value="0.0", inline=True)
@@ -146,7 +149,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__ANSWER__** 3️⃣", value="0.0", inline=True)
         
         
-        self.embed.set_footer(text=f"©️ HQ Trivia | Captain Cool")
+        self.embed.set_footer(text=f"©️ HQ Trivia | MADE BY SONU")
             #icon_url="https://cdn.discordapp.com/attachments/655852277550022679/666537435089600512/hqtriviaandroidapp_2.jpg")
 
         #await self.bot.add_reaction(embed,':spy:')
@@ -233,7 +236,7 @@ class Bot(discord.Client):
 
     async def on_ready(self):
         print("==============")
-        print("Savage  Trivia")
+        print("LION  Trivia")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -289,7 +292,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('bot_token'))
+    loop.create_task(bot.start('NzU3MjE2OTA2NjkxMzQ2NDg0.X2dLMg.IHRg25w6qkAyyg3lxKBdUHF3N4Y'))
     loop.run_forever()
 
 
@@ -298,7 +301,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('self_token',
+    loop.create_task(selfbot.start('#0346',
                                    bot=False))
     loop.run_forever()
 
