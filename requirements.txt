@@ -1,0 +1,6 @@
+discord
+asyncio
+requests
+websockets
+phonenumbers
+aiohttp
