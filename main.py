@@ -141,7 +141,7 @@ class Bot(discord.Client):
 
         # embed creation
 	
-        self.embed=discord.Embed(title= "**__Lion Trivia| __**",description = '***Connected with HQ Trivia....***', color=0x0099E1)
+        self.embed=discord.Embed(title= "**__Lion Trivia| TM__**",description = '***Connected with HQ Trivia....***', color=0x0099E1)
         self.embed.set_author(name ='',url=' ',icon_url='')
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/737039356249768006/737042737790189618/Screenshot_20200727-013331_Chrome.jpg")
         self.embed.add_field(name="**__ANSWER__** 1️⃣", value="0.0", inline=True)
@@ -252,7 +252,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "+hq":
+        if message.content.lower() == "+S":
 		
             #if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
@@ -292,7 +292,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NzU3MjE2OTA2NjkxMzQ2NDg0.X2dLMg.8awNpTBOmNpZWCru58Sc430-Mfo'))
+    loop.create_task(bot.start('NzU3NTczNzQ3NzM2ODM4MTU1.X2iXiA.7dEC6tfdnf82csicaZaodwe4wSM'))
     loop.run_forever()
 
 
