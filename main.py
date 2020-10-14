@@ -11,26 +11,23 @@ import concurrent
 import random
 
 #BOT_OWNER_ROLE = 'fetch' # change to what you need
-#BOT_OWNER_ROLE_ID = "623029647692791818"
+#BOT_OWNER_ROLE_ID = "765871210864574515"
   
  
 
  
-oot_channel_id_list = ["459842150323060736",#dimension hq
-"726974785250263113",#paramjeet hq
-#"736042800042344469", #chlg pro
-"568617830258442255",#revo hq
-		 "525131707410677761", #tribe
-		"568617830258442255", #trivia live
-	"693960182803333150",#world
-	"725596647115063356",#pride
-	"736540378001440819",#private
-	"728283181106593832",#unt
-        "732405414901317752",#vedantu
-         "732405971611287552",#sb
-         "753061146931495093",#hq 
-"733409955411132487",#quipp log all answer
-"753050428693807126"
+oot_channel_id_list = ["761311278571847740",#dragon hq
+"765745262689779712",#trivia community hq
+#"750013118943330334", #velocity gamming
+"754160388328652898",#imperio hq
+		 	"755080765192142899",#phonix challenge
+		"744950513178509523", #dark night 
+	"695944240345382952",#marvel hq
+	"765423498003742720",#trivia galaxy
+	"758901543490551848",#SA exchallenge   
+"760555743556141077",#bright trivia       
+		       "765159845552193556" #dragon community
+"759759847028686848"
 
 ]
 
@@ -82,7 +79,7 @@ class SelfBot(discord.Client):
 
     async def on_ready(self):
         print("======================")
-        print("Lion Trivia")
+        print("Lion trivia Pro")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -141,7 +138,7 @@ class Bot(discord.Client):
 
         # embed creation
 	
-        self.embed=discord.Embed(title= "**__Lion Trivia| TM__**",description = '***Connected with HQ Trivia....***', color=0x0099E1)
+        self.embed=discord.Embed(title= "**__Lion Trivia| PRO__**",description = '***Connected with HQ Trivia....***', color=0x0099E1)
         self.embed.set_author(name ='',url=' ',icon_url='')
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/737039356249768006/737042737790189618/Screenshot_20200727-013331_Chrome.jpg")
         self.embed.add_field(name="**__ANSWER__** 1️⃣", value="0.0", inline=True)
@@ -149,7 +146,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__ANSWER__** 3️⃣", value="0.0", inline=True)
         
         
-        self.embed.set_footer(text=f"©️ HQ Trivia | MADE BY SONU")
+        self.embed.set_footer(text=f"©️ HQ Trivia | Made By Sonu")
             #icon_url="https://cdn.discordapp.com/attachments/655852277550022679/666537435089600512/hqtriviaandroidapp_2.jpg")
 
         #await self.bot.add_reaction(embed,':spy:')
@@ -236,7 +233,7 @@ class Bot(discord.Client):
 
     async def on_ready(self):
         print("==============")
-        print("LION  Trivia")
+        print("Lion Trivia Pro")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -252,7 +249,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "+S":
+        if message.content.lower() == "+hq":
 		
             #if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
@@ -292,7 +289,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NzU3NTczNzQ3NzM2ODM4MTU1.X2iXiA.W4I5lAATMXYy5rU6_mnMbrmxTrs'))
+    loop.create_task(bot.start('NzU3NTczNzQ3NzM2ODM4MTU1.X2iXiA.LbCyoO6tzFCa6MnnuM4dejOqFZA'))
     loop.run_forever()
 
 
@@ -301,7 +298,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('#0346',
+    loop.create_task(selfbot.start('"NjE5MTY3Nzk2ODk0NjI5ODk5.X2WSQw.a3z52AaFVC7jIUkKSP4pCCG8dFg"',
                                    bot=False))
     loop.run_forever()
 
