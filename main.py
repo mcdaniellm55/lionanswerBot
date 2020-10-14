@@ -11,21 +11,21 @@ import concurrent
 import random
 
 #BOT_OWNER_ROLE = 'fetch' # change to what you need
-#BOT_OWNER_ROLE_ID = "765871210864574515"
+#BOT_OWNER_ROLE_ID = "619167796894629899"
   
  
 
  
-oot_channel_id_list = ["761311278571847740",#dragon hq
-"765745262689779712",#trivia community hq
-#"750013118943330334", #velocity gamming
-"754160388328652898",#imperio hq
-		 	"755080765192142899",#phonix challenge
-		"744950513178509523", #dark night 
-	"695944240345382952",#marvel hq
-	"765423498003742720",#trivia galaxy
-	"758901543490551848",#SA exchallenge   
-"760555743556141077",#bright trivia       
+oot_channel_id_list = ["765066876085862420",#trivia galaxy sb live
+"765776448093945856",#trivia community sb live
+"750013797250629653", #velocity gamming sb live
+"762870192107421726",#imperio sb live
+		 	"755080891004354630",#phonix challenge sb live    
+		"765313766128484372", #savage trivia
+	"758208917464940555",#marvel hq
+	"765159846050922517",#dragon community
+	"761638723334832178",#google pro sb live 
+"765066876085862420",#bright trivia       
 		       "765159845552193556" #dragon community
 "759759847028686848"
 
@@ -289,7 +289,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NzU3NTczNzQ3NzM2ODM4MTU1.X2iXiA.LbCyoO6tzFCa6MnnuM4dejOqFZA'))
+    loop.create_task(bot.start('NzY1OTUxNTQxMzAyNTI1OTYy.X4cR9g.Y19mhh4Q2FZekjEh94fVKW7sws0'))
     loop.run_forever()
 	
 def selfbot_process(update_event, answer_scores):
@@ -297,7 +297,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('"NjE5MTY3Nzk2ODk0NjI5ODk5.X2WSQw.a3z52AaFVC7jIUkKSP4pCCG8dFg"',
+    loop.create_task(selfbot.start('NjE5MTY3Nzk2ODk0NjI5ODk5.X4bbxg.ceXHJpWlQvRcbV98aZODrOReh6A',  
                                    bot=False))
     loop.run_forever()
 
