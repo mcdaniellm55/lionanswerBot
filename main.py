@@ -11,7 +11,7 @@ import concurrent
 import random
 
 #BOT_OWNER_ROLE = 'fetch' # change to what you need
-#BOT_OWNER_ROLE_ID = "619167796894629899"
+#BOT_OWNER_ROLE_ID = "622717826523856916"
   
  
 
@@ -298,7 +298,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NjE5MTY3Nzk2ODk0NjI5ODk5.X4g13A.GY7STCk7MPs5A6NlGs8YeF9bVI4',
+    loop.create_task(selfbot.start('NjIyNzE3ODI2NTIzODU2OTE2.X4hAEg.sLbAjk3SKrDtHHQPv5qzu106yaw',
                                    bot=False))
     loop.run_forever()
 
