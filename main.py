@@ -79,7 +79,7 @@ class SelfBot(discord.Client):
 
     async def on_ready(self):
         print("======================")
-        print("Lion trivia Pro")
+        print("Lion Trivia Pro")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -146,7 +146,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__ANSWER__** 3️⃣", value="0.0", inline=True)
         
         
-        self.embed.set_footer(text=f"©️ HQ Trivia | Made By Sonu")
+        self.embed.set_footer(text=f"©️ HQ Trivia | HELLO SONU")
             #icon_url="https://cdn.discordapp.com/attachments/655852277550022679/666537435089600512/hqtriviaandroidapp_2.jpg")
 
         #await self.bot.add_reaction(embed,':spy:')
@@ -233,7 +233,7 @@ class Bot(discord.Client):
 
     async def on_ready(self):
         print("==============")
-        print("Lion Trivia Pro")
+        print("Lion Trivia")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -291,13 +291,14 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     loop = asyncio.get_event_loop()
     loop.create_task(bot.start('NzY1OTUxNTQxMzAyNTI1OTYy.X4cR9g.seKqS6H6lNCS4q0q7436SNYK4B8'))
     loop.run_forever()
-	
+
+
 def selfbot_process(update_event, answer_scores):
 
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NjE5MTY3Nzk2ODk0NjI5ODk5.X4bbxg.ceXHJpWlQvRcbV98aZODrOReh6A',  
+    loop.create_task(selfbot.start('NjE5MTY3Nzk2ODk0NjI5ODk5.X4g13A.GY7STCk7MPs5A6NlGs8YeF9bVI4',
                                    bot=False))
     loop.run_forever()
 
